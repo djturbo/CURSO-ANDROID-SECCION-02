@@ -4,13 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="fjarquellada.es.seccion02.ListActivity">
+    tools:context="fjarquellada.es.seccion02.GridActivity">
 
 
-    <ListView
-        android:id="@+id/listView"
+    <GridView
+        android:id="@+id/gridView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true" />
+        android:layout_centerVertical="true"
+        android:columnWidth="90dp"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:gravity="center"
+        android:stretchMode="columnWidth">
+
+    </GridView>
 </RelativeLayout>
